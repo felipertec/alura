@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    text-align: center;
+}
+.logo img{
+   width: 200px;
+    height: 100px;
+}
+
+.textoDesafio{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0 20px 0
+}
+
+.tela{
+    text-align: center;
+    width: 50%;
+    height: 500px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid;
+    border-color: brown;
+}
+
+@font-face {
+    font-family: tituloApresentacao1;
+    src: url(fonts/Nosifer-Regular.ttf);
+}
+
+.tela .tituloApresentacao p{
+    color: red;
+    font-size: 80px;
+    margin: 50px 0 0 0;
+    font-family: tituloApresentacao1;
+}
+
+.tela .btnApresentacao{
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.btnApresentacao button{
+    background-color: rgb(2, 176, 2);
+    width: 150px;
+    height: 50px;
+    border-style: double;
+    border-color: burlywood;
+    cursor: pointer;
+}
+
+.btnApresentacao button:hover{
+    background-color: rgb(5, 246, 5);
+    width: 150px;
+    height: 50px;
+    box-shadow: 5px 10px red;
+    border-style: double;
+
+}
+
+.btnApresentacao button:active{
+    background-color: rgb(1, 70, 1);
+    width: 160px;
+    height: 60px;
+    border-style: double;
+    box-shadow: 5px 10px blueviolet;
+    border-color: burlywood;
+}
+
+.tela .telaChuvisco{
+    width: 100%;
+    height: 400px;
+}
+.tela .apresentacaoSaw{
+    width: 100%;
+    height: 400px;
+}
+
+.tela .btnProximo{
+    margin: 0;
+}
+.btnProximo{
+    background-color: rgb(2, 176, 2);
+    width: 120px;
+    height: 20px;
+    border-style: double;
+    border-color: burlywood;
+}
+
+.btnProximo:hover{
+    background-color: rgb(5, 246, 5);
+    width: 120px;
+    height: 20px;
+    box-shadow: 5px 10px red;
+    border-style: double;
+
+}
+
+.btnProximo:active{
+    background-color: rgb(1, 70, 1);
+    width: 120px;
+    height: 30px;
+    border-style: double;
+    box-shadow: 5px 10px blueviolet;
+    border-color: burlywood;
+}
+
+@font-face {
+    font-family: sawFalando;
+    src: url(fonts/GhoulFriAOE.ttf);
+}
+.desafio{
+    color: purple;
+    font-size: 30px;
+    font-family: sawFalando;
+}
+
+.tela .lose{
+    width: 100%;
+    height: 100%;
+}
+
+.tela .win{
+    width: 100%;
+    height: 100%;
+}
+
+.reiniciar{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.reiniciar:hover{
+    color: red;
+    font-family: tituloApresentacao1;
+    font-size: 30px;
+}
+
+
+
