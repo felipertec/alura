@@ -2,10 +2,13 @@
 let nome;
 let tentativa = 3;
 let venceu;
+let sorteado = Math.floor(Math.random() * 11); // gera
+console.log(sorteado);
 const root_tela = document.getElementById("tela");
+
+
 /**
  * Funções para serem chamadas no sistema!
- * funções: apresentação
  */
 
 function apresentacao(){
@@ -62,6 +65,10 @@ function iniciarJogo(){
     document.getElementById("apresentacaoSaw").remove();
     document.getElementById("btnProximo").remove();
     document.getElementById("audioSaw").remove();
+    const audio = document.createElement("audio");
+    audio.controls = "controls";
+    audio.autoplay = "autoplay";
+    audio.src = "sound/theme.m4a";
     const element = document.createElement("p");
     element.innerHTML = `Você terá que acertar o numero que está armazenado no computador.\n
                  Esse valor está entre 0 a 10. \n
@@ -79,7 +86,7 @@ function iniciarJogo(){
 function execucaoJogo(){
     while(tentativa != 0){
         let resp = prompt("Digite o valor?")
-        if(resp == 5){
+        if(resp == sorteado){
             venceu = true;
             tentativa = 0;
         }else{
