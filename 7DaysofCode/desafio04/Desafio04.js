@@ -18,11 +18,11 @@ function apresentacao(){
 
 function apresentacao2(){
     const rm = document.getElementById("tituloApresentacao").remove();
-    const chuvisco = document.createElement("img")
-    chuvisco.src = 'https://64.media.tumblr.com/tumblr_lqsvlcjlKC1r2uxw3o1_500.gif'
-    chuvisco.className = 'telaChuvisco'
-    chuvisco.id = 'telaChuvisco'
-    root_tela.appendChild(chuvisco)
+    const chuvisco = document.createElement("img");
+    chuvisco.src = 'img/chiado.gif';
+    chuvisco.className = 'telaChuvisco';
+    chuvisco.id = 'telaChuvisco';
+    root_tela.appendChild(chuvisco);
     const audio = document.createElement("audio");
     audio.controls = "controls";
     audio.autoplay = "autoplay";
