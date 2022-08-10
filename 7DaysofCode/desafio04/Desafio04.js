@@ -2,8 +2,8 @@
 let nome;
 let tentativa = 3;
 let venceu;
-let sorteado = Math.floor(Math.random() * 11); // gera
-console.log(sorteado);
+let sorteado = Math.floor(Math.random() * 11); // gera um valor aleatorio para tentar acertar!
+//console.log(sorteado);
 const root_tela = document.getElementById("tela");
 
 
@@ -36,7 +36,7 @@ function apresentacao3(){
     document.getElementById("telaChuvisco").remove();
     document.getElementById("audioTv").remove();
     const saw = document.createElement("img");
-    saw.src = 'https://c.tenor.com/Ppr1DLZECLgAAAAC/saw-jigsaw.gif';
+    saw.src = 'img/saw-jigsaw.gif';
     saw.className = 'apresentacaoSaw';
     saw.id = 'apresentacaoSaw';
     root_tela.appendChild(saw);
@@ -69,6 +69,10 @@ function iniciarJogo(){
     audio.controls = "controls";
     audio.autoplay = "autoplay";
     audio.src = "sound/theme.m4a";
+    const audio2 = document.createElement("audio");
+    audio2.controls = "controls";
+    audio2.autoplay = "autoplay";
+    audio2.src = "sound/texto.mp3";
     const element = document.createElement("p");
     element.innerHTML = `Você terá que acertar o numero que está armazenado no computador.\n
                  Esse valor está entre 0 a 10. \n
@@ -115,7 +119,7 @@ function gameOver1(){
     }
     document.getElementById("desafio").remove();
     const img = document.createElement("img");
-    img.src = "https://jovemnerd.com.br/wp-content/uploads/2016/12/giphy-5.gif";
+    img.src = "img/aplausos.gif";
     img.id = "win";
     img.className = "win"
     root_tela.appendChild(img);
@@ -141,7 +145,7 @@ function gameOver2(){
     }
     document.getElementById("desafio").remove();
     const img2 = document.createElement("img");
-    img2.src = "https://i.imgur.com/byJpnPv.gif";
+    img2.src = "img/lose.gif";
     img2.className = "lose";
     img2.id = "lose";
     root_tela.appendChild(img2);
